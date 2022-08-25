@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' ; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/fontawesome-free-5.15.3-web/css/all.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calc">
+        <main class="calc-body">
+          <section class="calc-screen">
+            <div class="calc-display" />
+              <span class="active"></span>
+              <span class="status-items">
+                <span class="on-signal">on</span>
+                <span class="battery-stat"><i class="fas fa-battery-full"></i></span>
+                <span class="battery-level"></span>
+                <span class="battery-charge"><i class="fas fa-bolt"></i></span>
+              </span>
+            </div>
+          </section>
+          <div class="calc-buttons">
+            <section class="calc-switches">
+              <button type="button" role="button" class="power-on">
+                <i class="fas fa-power-off"> ON </i>
+              </button>
+              <button type="button" role="button" class="power-off">
+                <i class="fas fa-power-off"> OFF </i>
+              </button>
+            </section>
+            <section class="calc-digits">
+              <button type="button" role="button" class="num nine">9</button>
+              <button type="button" role="button" class="num eight">8</button>
+              <button type="button" role="button" class="num seven">7</button>
+              <button type="button" role="button" class="num six">6</button>
+              <button type="button" role="button" class="num five">5</button>
+              <button type="button" role="button" class="num four">4</button>
+              <button type="button" role="button" class="num three">3</button>
+              <button type="button" role="button" class="num two">2</button>
+              <button type="button" role="button" class="num one">1</button>
+              <button type="button" role="button" class="num zero btn-big">0</button>
+              <button type="button" role="button" class="num dot">.</button>
+            </section>
+            <section class="calc-operators">
+              <button type="button" role="button" class=" opr plus"><i class="fas fa-plus"></i><span class="operator"> + </span></button>
+              <button type="button" role="button" class=" opr minus"><i class="fas fa-minus"></i><span class="operator"> - </span></button>
+              <button type="button" role="button" class=" opr divide"><i class="fas fa-divide"><span class="operator"> / </span></i></button>
+              <button type="button" role="button" class=" opr multiply"><i class="fas fa-times"></i><span class="operator"> * </span></i></button>
+              <button type="button" role="button" class="equals btn-big"><i class="fas fa-equals"></i>
+              </button>
+              <button type="button" role="button" class="delete"><i class="fas fa-backspace"></i></button>
+              <button type="button" role="button" class="reset">C</button>
+            </section>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="cordova.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+{
+  "name": "com.cordova.teniolash",
+  "displayName": "Simple Calculator",
+  "version": "1.0.0",
+  "description": "A simple Arithmetic Calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-android": "^10.1.2",
+    "cordova-browser": "^6.0.0",
+    "cordova-plugin-battery-status": "^2.0.3",
+    "cordova-plugin-device": "^2.1.0",
+    "cordova-plugin-splashscreen": "^6.0.2"
+  },
+  "cordova": {
+    "platforms": [
+      "browser",
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-battery-status": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-device": {}
+    }
+  }
+}
