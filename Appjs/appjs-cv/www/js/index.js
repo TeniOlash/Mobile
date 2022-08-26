@@ -1,29 +1,31 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
- */
+document.addEventListener('deviceready', deviceReady, false);
 
-// Wait for the deviceready event before using any of Cordova's device APIs.
-// See https://cordova.apache.org/docs/en/latest/cordova/events/events.html#deviceready
-document.addEventListener('deviceready', onDeviceReady, false);
+function deviceReady() {
+  $(document).ready(function () {
+    App.controller('home', function (page) {
+      //
+    });
 
-function onDeviceReady() {
-    // Cordova is now initialized. Have fun!
+    App.controller('skills', function (page) {
+      // Skills
+    });
 
-    console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
-    document.getElementById('deviceready').classList.add('ready');
+    App.controller('Contact', function (page) {
+      // Contact Details
+    });
+
+    App.controller('certs', function (page) {
+      // Certificates and Career summary
+    });
+
+    App.controller('extras', function (page) {
+      // Academic Background and extras
+    });
+
+    try {
+      App.restore();
+    } catch (err) {
+      App.load('home');
+    }
+  });
 }
