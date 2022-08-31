@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pocketblog v1</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui"
+    />
+    <link rel="stylesheet" href="./css/app.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+
+  <body>
+    <div class="app-page" data-page="home">
+      <div class="app-topbar">
+        <div class="app-title">Home page</div>
+      </div>
+      <div class="app-content">
+        <div class="app-section main-hero"></div>
+        <div class="app-section intro-txt">
+          <p>
+            Welcome to the Pocketblog. Click the buttons bellow to share your
+            thoughts and read all posts.
+          </p>
+          <!-- </div> -->
+          <div class="app-section">
+            <div class="app-button" data-target="create-post">
+              Create a post &raquo;
+            </div>
+            <!-- <div class="app-section"> -->
+            <div class="app-button" data-target="all-posts" id="view-posts">
+              View all posts &raquo;
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CREATE POST -->
+    <div class="app-page" data-page="create-post">
+      <div class="app-topbar">
+        <div class="app-button left" data-back data-autotitle></div>
+        <div class="app-title">Create a new post</div>
+      </div>
+      <div class="app-content">
+        <div class="app-section intro-txt">
+          Fill the fields below to create a post.
+        </div>
+        <form class="form">
+          <label for="title"> Post Title </label>
+          <input
+            required
+            type="text"
+            name="title"
+            maxlength="30"
+            minlength="5"
+          />
+          <label for="content"> Content </label>
+          <textarea
+            required
+            name="content"
+            id="content-input"
+            minlength="5"
+          ></textarea>
+          <button id="post-btn" type="submit">Create New Post</button>
+        </form>
+      </div>
+    </div>
+    <!-- ALL POSTS -->
+    <div class="app-page" data-page="all-posts">
+      <div class="app-topbar">
+        <div class="app-button left" data-back data-autotitle></div>
+        <div class="app-title">All posts</div>
+      </div>
+      <div class="app-content all-posts"></div>
+    </div>
+
+    <!-- <script src="cordova.js"></script> -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/app.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

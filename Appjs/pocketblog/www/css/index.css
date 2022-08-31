@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+  --primary-clr: #e3e3e3;
+  --secondary-clr: #a2accc;
+  --accent: #eee;
+}
+
+.app-content {
+    background-color: var(--primary-clr);
+}
+.app-topbar {
+    background-color: var(--secondary-clr);
+}
+.app-section .app-button {
+    color: var(--primary-clr) !important;
+    background-color: var(--secondary-clr) !important;
+    /* width: 15rem; */
+    margin: 2rem !important;
+}
+
+.main-hero {
+    background-image: url('../img/light-bulb-4514505_1920.jpg');
+    height: 50%;
+    max-width: 500px;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+}
+.intro-txt {
+    color: var(--secondary-clr);
+    text-align: center;
+    line-height: 2;
+    font-size: large;
+    font-weight: 100;
+}
+.all-posts {
+    padding: 0 1rem;
+}
+
+.post-title {
+    font-size: 25px;
+    text-transform: capitalize;
+}
+.post {
+    min-height: 7rem;
+    padding: 0 2rem;
+}
+sub {
+    font-size: 10px;
+    font-style: italic;
+}
+hr {
+    margin: 0.8rem 0;
+    border: var(--secondary-clr) 1px solid;
+}
+form {
+  padding: 2rem 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 3rem;
+  justify-content: center;
+}
+
+label {
+  color: var(--secondary-clr);
+}
+
+input, textarea {
+  width: 100%;
+  border: var(--secondary-clr) 2px solid;
+  height: 2.2rem;
+  border-radius: 4px;
+  background-color: var(--accent);
+}
+#content-input {
+    height: 10rem;
+}
+@media screen and (min-width: 768px) {
+    input {
+        width: 100%;
+
+    }
+    form {
+        max-width: 50%;
+        line-height: 2rem;
+        margin: auto;
+        padding: 2rem 5rem;
+    }
+}
+
+button {
+  background-color: var(--secondary-clr);
+  height: 2.5rem;
+  margin: 2rem;
+  width: 10rem;
+  border:  none;
+  box-shadow: var(--primary-clr) -1px 1px 3px;
+  color: var(--primary-clr);
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 4px;
+}
+
+button:active {
+  background-color: var(--accent);
+  color: var(--secondary-clr);
+}
+button:hover {
+  opacity: 0.8;
+}
+
+.title {
+    color: var(--primary-clr);
+    font-weight: 700;
+    text-transform: capitalize;;
+}
+.excerpt {
+    color: var(--primary-clr);
+    font-weight: 500;
+}
