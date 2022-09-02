@@ -25,17 +25,22 @@
 .main-hero {
     background-image: url('../img/light-bulb-4514505_1920.jpg');
     height: 50%;
-    max-width: 500px;
     background-position: center;
     background-size: cover;
     margin: auto;
 }
-.intro-txt {
+.intro-txt, .success-txt, .error-txt {
     color: var(--secondary-clr);
     text-align: center;
     line-height: 2;
     font-size: large;
     font-weight: 100;
+}
+.error-txt {
+    color: #cc4444;
+}
+.success-txt {
+    color: #44cc44;
 }
 .all-posts {
     padding: 0 1rem;
@@ -48,6 +53,25 @@
 .post {
     min-height: 7rem;
     padding: 0 2rem;
+}
+.loader {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 0.7rem solid var(--accent);
+    border-top: 0.7rem solid var(--secondary-clr);
+    animation: spin 1500ms linear infinite;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 sub {
     font-size: 10px;
